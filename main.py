@@ -2,12 +2,14 @@
 import random
 
 action = {"R": "Rock", "P": "Paper", "S": "Scissors"}
+cancun = list(action.keys())
+print(cancun)
 sen = True
 pai = True
 while pai:
     while sen:
         user = input("Enter a choice: ")
-        if user in action:
+        if user in cancun:
             print("choice taken")
             sen = False
 
@@ -15,7 +17,7 @@ while pai:
             print("Error, invalid choice. Try again")
 
 #computer input
-    comp = random.choice(list(action.keys()))
+    comp = random.choice(cancun)
     print(comp)
 
 #Display Selections
