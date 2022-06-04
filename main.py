@@ -8,7 +8,7 @@ sen = True
 pai = True
 while pai:
     while sen:
-        user = input("Enter a choice: ")
+        user = input("Enter a choice: R for Rock, P for Paper and S for Scissors ")
         if user in cancun:
             print("choice taken")
             sen = False
